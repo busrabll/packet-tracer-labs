@@ -8,4 +8,4 @@ Each lab simulates a different network architecture, providing examples similar 
 ### 🔹 Lab 01 - Packet Tracer Introduction
 
 📌 This topology demonstrates how two branches of an organization communicate securely over the Internet while being protected against potential attacks through Firewalls.
-📌 [View Image](Lab01-Packet-Tracer-Introduction/Lab01-Packet-Tracer-Introduction.png)
+    [View Image](Lab01-Packet-Tracer-Introduction/Lab01-Packet-Tracer-Introduction.png)

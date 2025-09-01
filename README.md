@@ -13,3 +13,7 @@ This topology demonstrates how two branches of an organization communicate secur
 ### 🔹 Lab 02 - Connecting Devices
 This topology demonstrates how routers can be interconnected over different distances while PCs communicate within their LANs through switches. It also highlights the proper use of cable types (straight-through, crossover, and fiber) for device connections.
 [View Image](Lab02-Connecting-Devices/Lab02-Connecting-Devices.png)
+
+### 🔹 Lab 03 - OSI Model
+This topology demonstrates the analysis of packet journeys across the OSI layers using Simulation Mode and the generation of Layer 7 traffic via DHCP through the IP release/renew process on PC1.
+[View Image](Lab03-OSI-Model/Lab03-OSI-Model.png)

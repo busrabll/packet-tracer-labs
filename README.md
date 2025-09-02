@@ -24,8 +24,7 @@ This lab demonstrates how to perform basic device configurations on Cisco IOS de
 
 #### ⚙️ Step-by-Step Configuration
 
-##### 1. Switch from user EXEC mode to privileged EXEC mode.
-[View Image](Lab04-Basic-Device-Security/images/user-exec-to-privileged-exec.png)
+##### 1. Switch from user EXEC mode to privileged EXEC mode. [View Image](Lab04-Basic-Device-Security/images/user-exec-to-privileged-exec.png)
 
 ##### 2. Enter global configuration mode.
 [View Image](Lab04-Basic-Device-Security/images/global-configuration-mode.png)

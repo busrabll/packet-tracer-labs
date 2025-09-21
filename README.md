@@ -16,7 +16,6 @@ This topology demonstrates how routers can be interconnected over different dist
 
 ### 🔹 Lab 03 - OSI Model
 This topology demonstrates the analysis of packet journeys across the OSI layers using Simulation Mode and the generation of Layer 7 traffic via DHCP through the IP release/renew process on PC1.
-[View Image](Lab03-OSI-Model/Lab03-OSI-Model.png)
 
 ### 🔹 Lab 04 - Basic Device Security
 This lab demonstrates how to perform basic device configurations on Cisco IOS devices using the CLI.
@@ -46,7 +45,7 @@ This laboratory demonstrates how switches dynamically learn MAC addresses and up
 
 ### ⚙️ Step-by-Step Process
 
-### 1. Initial Setup
+### 1. Initial setup
 - Both switches (SW1, SW2) start with empty MAC address tables.
 - All PCs (PC1, PC2, PC3, PC4) start with empty ARP tables.
 - [View Image](Lab05-Ethernet-LAN-Switching/images/initial-topology.png)
@@ -68,6 +67,38 @@ This laboratory demonstrates how switches dynamically learn MAC addresses and up
 ### 4. Removing MAC addresses
 - [View Image](Lab05-Ethernet-LAN-Switching/images/clear-mac-address.png)
 
+### 🔹 Lab 06 - Cisco Router IP Configuration
+This lab demonstrates how to configure and verify router interfaces and host IP addresses to establish end-to-end connectivity across multiple networks.
+
+### ⚙️ Step-by-Step Process
+
+### 1. Check the current interface status
+- Use the `show ip interface brief` command to check the status of the interfaces.
+- [View Image](Lab06-Cisco-Ip-Configuration/images/display-interface-status.png)
+
+### 2. Configure the G0/0 interface of the router with an IP address
+- Enter the interface configuration mode and assign an IP address with a subnet mask.
+- [View Image](Lab06-Cisco-Ip-Configuration/images/g0-0-ip-configuration.png)
+
+### 3. Add a description to document the interface connection 
+- [View Image](Lab06-Cisco-Ip-Configuration/images/g0-0-description-configuration.png)
+
+### 4. Activate the interface
+- By default, Cisco router interfaces are administratively **shut down** (disabled).
+- To bring an interface into a working state, the `no shutdown` command is applied in a specific interface configuration mode.    
+- [View Image](Lab06-Cisco-Ip-Configuration/images/g0-0-interface-activation.png)
+
+### 5. Configure the router's G0/1 interface with an IP address, add a description to document the interface connection, and finally enable the interface.
+- [View Image](Lab06-Cisco-Ip-Configuration/images/g0-1-all-ip-configuration.png)
+
+### 6. Configure the router's G0/2 interface with an IP address, add a description to document the interface connection, and finally enable the interface.
+- [View Image](Lab06-Cisco-Ip-Configuration/images/g0-2-all-ip-configuration.png)
+
+### 7. Verify the Configuration
+- Use the `show ip interface brief` command to check the status of the interfaces.
+- This command displays the assigned IP addresses, the administrative status, and the protocol state.
+- If both `Status` and `Protocol` are shown as **up**, the interface is working correctly.
+- [View Image](Lab06-Cisco-Ip-Configuration/images/check-interface-status.png)
 
 
 

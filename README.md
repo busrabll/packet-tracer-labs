@@ -74,31 +74,31 @@ This lab demonstrates how to configure and verify router interfaces and host IP 
 
 ### 1. Check the current interface status
 - Use the `show ip interface brief` command to check the status of the interfaces.
-- [View Image](Lab06-Cisco-Ip-Configuration/images/display-interface-status.png)
+- [View Image](Lab06-Cisco-Router-Ip-Configuration/images/display-interface-status.png)
 
 ### 2. Configure the G0/0 interface of the router with an IP address
 - Enter the interface configuration mode and assign an IP address with a subnet mask.
-- [View Image](Lab06-Cisco-Ip-Configuration/images/g0-0-ip-configuration.png)
+- [View Image](Lab06-Cisco-Router-Ip-Configuration/images/g0-0-ip-configuration.png)
 
 ### 3. Add a description to document the interface connection 
-- [View Image](Lab06-Cisco-Ip-Configuration/images/g0-0-description-configuration.png)
+- [View Image](Lab06-Cisco-Router-Ip-Configuration/images/g0-0-description-configuration.png)
 
 ### 4. Activate the interface
 - By default, Cisco router interfaces are administratively **shut down** (disabled).
 - To bring an interface into a working state, the `no shutdown` command is applied in a specific interface configuration mode.    
-- [View Image](Lab06-Cisco-Ip-Configuration/images/g0-0-interface-activation.png)
+- [View Image](Lab06-Cisco-Router-Ip-Configuration/images/g0-0-interface-activation.png)
 
 ### 5. Configure the router's G0/1 interface with an IP address, add a description to document the interface connection, and finally enable the interface.
 - [View Image](Lab06-Cisco-Ip-Configuration/images/g0-1-all-ip-configuration.png)
 
 ### 6. Configure the router's G0/2 interface with an IP address, add a description to document the interface connection, and finally enable the interface.
-- [View Image](Lab06-Cisco-Ip-Configuration/images/g0-2-all-ip-configuration.png)
+- [View Image](Lab06-Cisco-Router-Ip-Configuration/images/g0-2-all-ip-configuration.png)
 
 ### 7. Verify the Configuration
 - Use the `show ip interface brief` command to check the status of the interfaces.
 - This command displays the assigned IP addresses, the administrative status, and the protocol state.
 - If both `Status` and `Protocol` are shown as **up**, the interface is working correctly.
-- [View Image](Lab06-Cisco-Ip-Configuration/images/check-interface-status.png)
+- [View Image](Lab06-Cisco-Router-Ip-Configuration/images/check-interface-status.png)
 
 
 

@@ -94,11 +94,49 @@ This lab demonstrates how to configure and verify router interfaces and host IP 
 ### 6. Configure the router's G0/2 interface with an IP address, add a description to document the interface connection, and finally enable the interface.
 - [View Image](Lab06-Cisco-Router-Ip-Configuration/images/g0-2-all-ip-configuration.png)
 
-### 7. Verify the Configuration
+### 7. Verify the configuration
 - Use the `show ip interface brief` command to check the status of the interfaces.
 - This command displays the assigned IP addresses, the administrative status, and the protocol state.
 - If both `Status` and `Protocol` are shown as **up**, the interface is working correctly.
 - [View Image](Lab06-Cisco-Router-Ip-Configuration/images/check-interface-status.png)
+
+### 🔹 Lab 07 - Cisco Switch Configuration
+This lab demonstrates how to configure switch interfaces, set interface speed and duplex, assign interface descriptions, disable unused ports, and configure host IP addresses to provide end-to-end communication across the network.
+
+### ⚙️ Step-by-Step Process
+
+## 1. Review the network topology
+- The lab uses the following network topology to provide end-to-end connectivity across two switches, four hosts, and a router.
+- [View Image](Lab07-topology.png)
+
+### 2. Configure host IP address
+- Assign static IP addresses to the hosts in the 172.16.0.0/16 network.
+- [View Image](Lab07-configure-pc1-ip-address.png)
+
+### 3. Change switch hostname
+- [View Image](Lab07-changeHostName.png)
+
+### 4. Check initial interface status
+- [View Image](Lab07-interfaceStatus.png)
+
+### 5. Configure switch uplink interfaces (Speed/Duplex)
+- Configure the switch's (SW1) G0/2 interface with an speed and duplex, add a description to document the interface connection.
+- [View Image](Lab07-configure-g0-2.png)
+
+### 6. Configure FastEthernet ports for end hosts
+- Select FastEthernet0/1–2 and add a description to label them as host-facing interfaces.
+- [View Image](Lab07-configure-f0-2.png)
+
+### 7. Disable unused FastEthernet interfaces
+- Select FastEthernet0/3–24, add a “not in use” description, and shut them down to disable unused ports.
+- [View Image](Lab07-addShutdown.png)
+
+### 8. Save the configuration
+- Save the running configuration to preserve changes after reboot.
+- [View Image](Lab07-save.png)
+
+### 9. Verify interface status again
+- [View Image](Lab07-showConfig.png)
 
 
 

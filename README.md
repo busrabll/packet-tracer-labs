@@ -5,19 +5,19 @@ Each lab simulates a different network architecture, providing examples similar 
 
 ## 📂 Contents
 
-### 🔹 Lab 01 - Packet Tracer Introduction
+## 🔹 Lab 01 - Packet Tracer Introduction
 
 This topology demonstrates how two branches of an organization communicate securely over the Internet while being protected against potential attacks through Firewalls.
 [View Image](Lab01-Packet-Tracer-Introduction/Lab01-Packet-Tracer-Introduction.png)
 
-### 🔹 Lab 02 - Connecting Devices
+## 🔹 Lab 02 - Connecting Devices
 This topology demonstrates how routers can be interconnected over different distances while PCs communicate within their LANs through switches. It also highlights the proper use of cable types (straight-through, crossover, and fiber) for device connections.
 [View Image](Lab02-Connecting-Devices/Lab02-Connecting-Devices.png)
 
-### 🔹 Lab 03 - OSI Model
+## 🔹 Lab 03 - OSI Model
 This topology demonstrates the analysis of packet journeys across the OSI layers using Simulation Mode and the generation of Layer 7 traffic via DHCP through the IP release/renew process on PC1.
 
-### 🔹 Lab 04 - Basic Device Security
+## 🔹 Lab 04 - Basic Device Security
 This lab demonstrates how to perform basic device configurations on Cisco IOS devices using the CLI.
 
 ### ⚙️ Step-by-Step Configuration
@@ -40,7 +40,7 @@ This lab demonstrates how to perform basic device configurations on Cisco IOS de
 
 - Save the configuration to startup-config. [View Image](Lab04-Basic-Device-Security/images/save-configuration.png)
 
-### 🔹 Lab 05 - Ethernet LAN Switching
+## 🔹 Lab 05 - Ethernet LAN Switching
 This laboratory demonstrates how switches dynamically learn MAC addresses and update MAC address tables by observing ARP and ICMP traffic generated during communication between computers.
 
 ### ⚙️ Step-by-Step Process
@@ -67,7 +67,7 @@ This laboratory demonstrates how switches dynamically learn MAC addresses and up
 ### 4. Removing MAC addresses
 - [View Image](Lab05-Ethernet-LAN-Switching/images/clear-mac-address.png)
 
-### 🔹 Lab 06 - Cisco Router IP Configuration
+## 🔹 Lab 06 - Cisco Router IP Configuration
 This lab demonstrates how to configure and verify router interfaces and host IP addresses to establish end-to-end connectivity across multiple networks.
 
 ### ⚙️ Step-by-Step Process
@@ -100,43 +100,43 @@ This lab demonstrates how to configure and verify router interfaces and host IP 
 - If both `Status` and `Protocol` are shown as **up**, the interface is working correctly.
 - [View Image](Lab06-Cisco-Router-Ip-Configuration/images/check-interface-status.png)
 
-### 🔹 Lab 07 - Cisco Switch Configuration
+## 🔹 Lab 07 - Cisco Switch Configuration
 This lab demonstrates how to configure switch interfaces, set interface speed and duplex, assign interface descriptions, disable unused ports, and configure host IP addresses to provide end-to-end communication across the network.
 
 ### ⚙️ Step-by-Step Process
 
 ## 1. Review the network topology
 - The lab uses the following network topology to provide end-to-end connectivity across two switches, four hosts, and a router.
-- [View Image](Lab07-topology.png)
+- [View Image](Lab07-Cisco-Switch-Configuration/images/topology.png)
 
 ### 2. Configure host IP address
 - Assign static IP addresses to the hosts in the 172.16.0.0/16 network.
-- [View Image](Lab07-configure-pc1-ip-address.png)
+- [View Image](Lab07-Cisco-Switch-Configuration/images/configure-pc1-ip-address.png)
 
 ### 3. Change switch hostname
-- [View Image](Lab07-changeHostName.png)
+- [View Image](Lab07-Cisco-Switch-Configuration/images/changeHostName.png)
 
 ### 4. Check initial interface status
-- [View Image](Lab07-interfaceStatus.png)
+- [View Image](Lab07-Cisco-Switch-Configuration/images/interfaceStatus.png)
 
 ### 5. Configure switch uplink interfaces (Speed/Duplex)
 - Configure the switch's (SW1) G0/2 interface with an speed and duplex, add a description to document the interface connection.
-- [View Image](Lab07-configure-g0-2.png)
+- [View Image](Lab07-Cisco-Switch-Configuration/images/configure-g0-2.png)
 
 ### 6. Configure FastEthernet ports for end hosts
 - Select FastEthernet0/1–2 and add a description to label them as host-facing interfaces.
-- [View Image](Lab07-configure-f0-2.png)
+- [View Image](Lab07-Cisco-Switch-Configuration/images/configure-f0-2.png)
 
 ### 7. Disable unused FastEthernet interfaces
 - Select FastEthernet0/3–24, add a “not in use” description, and shut them down to disable unused ports.
-- [View Image](Lab07-addShutdown.png)
+- [View Image](Lab07-Cisco-Switch-Configuration/images/addShutdown.png)
 
 ### 8. Save the configuration
 - Save the running configuration to preserve changes after reboot.
-- [View Image](Lab07-save.png)
+- [View Image](Lab07-Cisco-Switch-Configuration/images/save.png)
 
 ### 9. Verify interface status again
-- [View Image](Lab07-showConfig.png)
+- [View Image](Lab07-Cisco-Switch-Configuration/images/showConfig.png)
 
 
 

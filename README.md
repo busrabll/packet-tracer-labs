@@ -105,7 +105,7 @@ This lab demonstrates how to configure switch interfaces, set interface speed an
 
 ### ⚙️ Step-by-Step Process
 
-## 1. Review the network topology
+### 1. Review the network topology
 - The lab uses the following network topology to provide end-to-end connectivity across two switches, four hosts, and a router.
 - [View Image](Lab07-Cisco-Switch-Configuration/images/topology.png)
 

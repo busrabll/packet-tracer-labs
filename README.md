@@ -43,7 +43,7 @@ This lab demonstrates how to perform basic device configurations on Cisco IOS de
 ## 🔹 Lab 05 - Ethernet LAN Switching
 This laboratory demonstrates how switches dynamically learn MAC addresses and update MAC address tables by observing ARP and ICMP traffic generated during communication between computers.
 
-### ⚙️ Step-by-Step Process
+### ⚙️ Step-by-Step Configuration
 
 ### 1. Initial setup
 - Both switches (SW1, SW2) start with empty MAC address tables.
@@ -70,7 +70,7 @@ This laboratory demonstrates how switches dynamically learn MAC addresses and up
 ## 🔹 Lab 06 - Cisco Router IP Configuration
 This lab demonstrates how to configure and verify router interfaces and host IP addresses to establish end-to-end connectivity across multiple networks.
 
-### ⚙️ Step-by-Step Process
+### ⚙️ Step-by-Step Configuration
 
 ### 1. Check the current interface status
 - Use the `show ip interface brief` command to check the status of the interfaces.
@@ -103,43 +103,39 @@ This lab demonstrates how to configure and verify router interfaces and host IP 
 ## 🔹 Lab 07 - Cisco Switch Configuration
 This lab demonstrates how to configure switch interfaces, set interface speed and duplex, assign interface descriptions, disable unused ports, and configure host IP addresses to provide end-to-end communication across the network.
 
-### ⚙️ Step-by-Step Process
+### ⚙️ Step-by-Step Configuration
 
 ### 1. Review the network topology
 - The lab uses the following network topology to provide end-to-end connectivity across two switches, four hosts, and a router.
-- [View Image](Lab07-Cisco-Switch-Configuration/images/topology.png)
+- [View Topology](Lab07-Cisco-Switch-Configuration/images/topology.png)
 
 ### 2. Configure host IP address
-- Assign static IP addresses to the hosts in the 172.16.0.0/16 network.
-- [View Image](Lab07-Cisco-Switch-Configuration/images/configure-pc1-ip-address.png)
+- Assign static IPv4 addresses and subnet masks to the hosts within the 172.16.0.0/16 network.
+- [View IP Configuration](Lab07-Cisco-Switch-Configuration/images/configure-pc1-ip-address.png)
 
-### 3. Change switch hostname
-- [View Image](Lab07-Cisco-Switch-Configuration/images/changeHostName.png)
+### 3. Configure Switch Hostname
+- Change the switch hostname to SW1 for easier identification and management.
+- [View Hostname Configuration](Lab07-Cisco-Switch-Configuration/images/changeHostName.png)
 
 ### 4. Check initial interface status
-- [View Image](Lab07-Cisco-Switch-Configuration/images/interfaceStatus.png)
+- Check the initial status of switch interfaces, including connectivity, speed, and duplex settings.
+- [View Interface Status](Lab07-Cisco-Switch-Configuration/images/interfaceStatus.png)
 
 ### 5. Configure switch uplink interfaces (Speed/Duplex)
-- Configure the switch's (SW1) G0/2 interface with an speed and duplex, add a description to document the interface connection.
-- [View Image](Lab07-Cisco-Switch-Configuration/images/configure-g0-2.png)
+- Configure the SW1 GigabitEthernet0/2 uplink interface with a speed of 1000 Mbps, full-duplex mode, and a description identifying its connection to SW2.
+- [View Uplink Configuration](Lab07-Cisco-Switch-Configuration/images/configure-g0-2.png)
 
 ### 6. Configure FastEthernet ports for end hosts
-- Select FastEthernet0/1–2 and add a description to label them as host-facing interfaces.
-- [View Image](Lab07-Cisco-Switch-Configuration/images/configure-f0-2.png)
+- Configure FastEthernet0/1–2 interfaces and add a description to identify them as host-facing ports.
+- [View Port Configuration](Lab07-Cisco-Switch-Configuration/images/configure-f0-2.png)
 
 ### 7. Disable unused FastEthernet interfaces
-- Select FastEthernet0/3–24, add a “not in use” description, and shut them down to disable unused ports.
-- [View Image](Lab07-Cisco-Switch-Configuration/images/addShutdown.png)
+- Add a "not in use" description to FastEthernet0/3–24 interfaces and shut them down to disable unused ports.
+- [View Port Configuration](Lab07-Cisco-Switch-Configuration/images/addShutdown.png)
 
-### 8. Save the configuration
-- Save the running configuration to preserve changes after reboot.
-- [View Image](Lab07-Cisco-Switch-Configuration/images/save.png)
-
-### 9. Verify interface status again
-- [View Image](Lab07-Cisco-Switch-Configuration/images/showConfig.png)
-
-
-
-
+### 8. Save and Verify Configuration
+- Save the switch configuration and verify that active ports are connected and unused ports are disabled.
+- [View Save Configuration](Lab07-Cisco-Switch-Configuration/images/save.png)
+- [View Final Interface Status](Lab07-Cisco-Switch-Configuration/images/showConfig.png)
 
 

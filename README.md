@@ -7,38 +7,56 @@ Each lab simulates a different network architecture, providing examples similar 
 
 ## 🔹 Lab 01 - Packet Tracer Introduction
 
-This topology demonstrates how two branches of an organization communicate securely over the Internet while being protected against potential attacks through Firewalls.
-[View Image](Lab01-Packet-Tracer-Introduction/Lab01-Packet-Tracer-Introduction.png)
+This lab demonstrates a network topology designed to connect two branch networks over the Internet, using firewalls to provide network security and protect against potential threats.
+- [View Network Topology](Lab01-Packet-Tracer-Introduction/Lab01-Packet-Tracer-Introduction.png)
 
 ## 🔹 Lab 02 - Connecting Devices
-This topology demonstrates how routers can be interconnected over different distances while PCs communicate within their LANs through switches. It also highlights the proper use of cable types (straight-through, crossover, and fiber) for device connections.
-[View Image](Lab02-Connecting-Devices/Lab02-Connecting-Devices.png)
+
+This lab demonstrates how different network devices are interconnected using appropriate cable types, including straight-through, crossover, and fiber-optic cables, across local and long-distance connections.
+- [View Network Topology](Lab02-Connecting-Devices/Lab02-Connecting-Devices.png)
 
 ## 🔹 Lab 03 - OSI Model
-This topology demonstrates the analysis of packet journeys across the OSI layers using Simulation Mode and the generation of Layer 7 traffic via DHCP through the IP release/renew process on PC1.
+
+This lab demonstrates how packets are processed across the OSI layers using Simulation Mode, with DHCP traffic generated through the IP release and renew process.
 
 ## 🔹 Lab 04 - Basic Device Security
-This lab demonstrates how to perform basic device configurations on Cisco IOS devices using the CLI.
+
+This lab demonstrates basic Cisco IOS device configuration and security settings using the Command Line Interface (CLI).
 
 ### ⚙️ Step-by-Step Configuration
 
-- Switch from user EXEC mode to privileged EXEC mode. [View Image](Lab04-Basic-Device-Security/images/user-exec-to-privileged-exec.png)
+### Step 1 – Access Global Configuration Mode
 
-- Enter global configuration mode. [View Image](Lab04-Basic-Device-Security/images/global-configuration-mode.png)
+- Use the `enable` command to enter Privileged EXEC Mode, then `configure terminal` to access Global Configuration Mode.
+- [View Privileged EXEC Mode](Lab04-Basic-Device-Security/images/user-exec-to-privileged-exec.png)
+- [View Global Configuration Mode](Lab04-Basic-Device-Security/images/global-configuration-mode.png)
 
-- Change device hostnames. [View Image](Lab04-Basic-Device-Security/images/change-hostname.png)
+### Step 2 – Configure Switch Hostname
 
-- Configure an unencrypted enable password. [View Image](Lab04-Basic-Device-Security/images/add-password-for-privileged-mode.png)
+- Change the switch hostname to `SW1` for easier identification and management.
+- [View Hostname Configuration](Lab04-Basic-Device-Security/images/change-hostname.png)
 
-- View current configuration. [View Image](Lab04-Basic-Device-Security/images/show-running-config.png)
+### Step 3 – Configure and Verify Enable Password
 
-- Enable password encryption. [View Image](Lab04-Basic-Device-Security/images/password-encryption.png)
+- Configure an unencrypted `enable password` and use the `show running-config` command to verify its configuration.
+- [View Password Configuration](Lab04-Basic-Device-Security/images/add-password-for-privileged-mode.png)
+- [View Running Configuration](Lab04-Basic-Device-Security/images/show-running-config.png)
 
-- View current configuration again. [View Image](Lab04-Basic-Device-Security/images/password-encryption-show-running.png)
+### Step 4 – Enable and Verify Password Encryption
 
-- Configure a more secure encrypted password (enable secret). [View Image](Lab04-Basic-Device-Security/images/enable-secret.png)
+- Enable password encryption using the `service password-encryption` command and verify the encrypted password with `show running-config`.
+- [View Password Encryption Configuration](Lab04-Basic-Device-Security/images/password-encryption.png)
+- [View Encrypted Configuration](Lab04-Basic-Device-Security/images/password-encryption-show-running.png)
 
-- Save the configuration to startup-config. [View Image](Lab04-Basic-Device-Security/images/save-configuration.png)
+### Step 5 – Configure Enable Secret Password
+
+- Configure an `enable secret` password to provide stronger protection for Privileged EXEC Mode access.
+- [View Enable Secret Configuration](Lab04-Basic-Device-Security/images/enable-secret.png)
+
+### Step 6 – Save the Configuration
+
+- Save the `running-config` to `startup-config` using the `write` command to preserve changes after a reboot.
+- [View Saved Configuration](Lab04-Basic-Device-Security/images/save-configuration.png)
 
 ## 🔹 Lab 05 - Ethernet LAN Switching
 This laboratory demonstrates how switches dynamically learn MAC addresses and update MAC address tables by observing ARP and ICMP traffic generated during communication between computers.

@@ -36,7 +36,7 @@ This lab demonstrates how to configure switch interfaces, set interface speed an
 
 #### Step 7 – Disable Unused FastEthernet Interfaces
 
-- Add a "not in use" description to FastEthernet0/3–24 interfaces and use the "shutdown" command to disable unused ports.
+- Add a **not in use** description to FastEthernet0/3–24 interfaces and use the `shutdown` command to disable unused ports.
 - [View Port Configuration](images/addShutdown.png)
 
 #### Step 8 – Save and Verify Configuration
